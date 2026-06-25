@@ -11,6 +11,7 @@ export default {
           amber: '#F2B52B',
           dark: '#060D1A',
           navy: '#061123',
+          emerald: '#00BC7C',
         }
       },
       fontFamily: {
