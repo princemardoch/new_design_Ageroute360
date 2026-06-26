@@ -63,7 +63,7 @@ const WhyPlatform = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: sectionRef.current,
-        start: "top 75%",
+        start: "top 80%",
         toggleActions: "play none none reverse"
       }
     })
@@ -74,25 +74,25 @@ const WhyPlatform = () => {
     )
     
     .fromTo(".wp-card", 
-      { y: 40, opacity: 0 },
+      { y: 30, opacity: 0 },
       { y: 0, opacity: 1, stagger: 0.15, duration: 0.8, ease: "power3.out" },
       "-=0.4"
     )
   }, { scope: sectionRef })
 
   return (
-    <section ref={sectionRef} className="py-24 md:py-32 bg-brand-teal overflow-hidden relative" style={{ backgroundImage: "url('src/assets/images/WhythisplatformBackground.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <section ref={sectionRef} className="py-16 md:py-24 lg:py-32 bg-brand-teal overflow-hidden relative max-[500px]:py-12" style={{ backgroundImage: "url('/src/assets/images/WhythisplatformBackground.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
       
       <div className="absolute top-0 left-0 w-full h-px bg-white/10" />
       <div className="absolute bottom-0 left-0 w-full h-px bg-white/10" />
 
-      <div className="max-w-[1260px] mx-auto px-6 flex flex-col items-center">
+      <div className="max-w-[1260px] mx-auto px-4 sm:px-6 flex flex-col items-center">
         
-        <div className="wp-header flex flex-col items-center text-center mb-20 max-w-[700px]">
-          <span className="text-brand-amber text-sm md:text-base font-semibold font-jakarta uppercase tracking-[2.75px] mb-4">
+        <div className="wp-header flex flex-col items-center text-center mb-12 sm:mb-16 lg:mb-20 max-w-[700px]">
+          <span className="text-brand-amber text-xs sm:text-sm md:text-base font-semibold font-jakarta uppercase tracking-[2px] sm:tracking-[2.75px] mb-3 sm:mb-4">
             Why this platform
           </span>
-          <h2 className="text-white text-4xl md:text-5xl lg:text-[45px] font-extrabold font-sora leading-[1.15]">
+          <h2 className="text-white text-2xl sm:text-4xl md:text-5xl lg:text-[45px] font-extrabold font-sora leading-[1.2] sm:leading-[1.15]">
             Infrastructure Intelligence <br className="hidden md:block" /> for a Modern Nation.
           </h2>
         </div>
@@ -101,16 +101,17 @@ const WhyPlatform = () => {
           {features.map((feature, index) => (
             <div 
               key={feature.id} 
-              className={`wp-card flex flex-col group
-                px-6 py-10 lg:py-12
-                ${index !== 0 ? 'lg:border-l border-white/10' : ''} 
-                ${index > 0 && index < 2 ? 'md:border-l border-white/10' : ''}
-                ${index > 1 ? 'md:border-t lg:border-t-0 border-white/10' : ''}
+              className={`wp-card flex flex-col group px-5 sm:px-6 py-8 sm:py-10 lg:py-12
+                border-b border-white/10 
+                last:border-b-0 lg:border-b-0
+                ${index % 2 === 0 ? 'md:border-r border-white/10' : ''}
+                ${index < 2 ? 'md:border-b border-white/10' : ''}
+                ${index !== 3 ? 'lg:border-r border-white/10' : ''}
                 hover:bg-white/5 transition-colors duration-500
               `}
             >
-              <div className="flex justify-between items-center w-full mb-8">
-                <span className="text-white/40 group-hover:text-white/60 transition-colors font-sora font-bold text-sm tracking-wider">
+              <div className="flex justify-between items-center w-full mb-6 sm:mb-8">
+                <span className="text-white/40 group-hover:text-white/60 transition-colors font-sora font-bold text-xs sm:text-sm tracking-wider">
                   {feature.id}
                 </span>
                 <div className="w-8 h-8 rounded-full bg-white/5 group-hover:bg-brand-amber/10 flex items-center justify-center transition-colors">
@@ -118,11 +119,11 @@ const WhyPlatform = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-3">
-                <h3 className="text-white text-xl md:text-2xl font-bold font-sora leading-tight">
+              <div className="flex flex-col gap-2 sm:gap-3">
+                <h3 className="text-white text-lg sm:text-xl md:text-2xl font-bold font-sora leading-tight">
                   {feature.title}
                 </h3>
-                <p className="text-white/60 text-sm md:text-base font-normal font-jakarta leading-relaxed">
+                <p className="text-white/60 text-sm font-normal font-jakarta leading-relaxed">
                   {feature.desc}
                 </p>
               </div>
