@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '../../hooks/useGSAP'
-
+import Logo from "/src/assets/images/logo.png"
 gsap.registerPlugin(ScrollTrigger)
 
 const Footer = () => {
@@ -74,7 +74,7 @@ const Footer = () => {
           
           <div className="footer-col lg:col-span-4 flex flex-col gap-6">
             <Link to="/" className="w-16 h-16 bg-white rounded-full flex items-center justify-center overflow-hidden hover:scale-105 transition-transform">
-              <img src="/src/assets/images/logo.png" alt="Ageroute Logo" className="w-12 h-12 object-contain" />
+              <img src={Logo} alt="Ageroute Logo" className="w-12 h-12 object-contain" />
             </Link>
             <p className="text-white/60 text-base font-inter leading-relaxed max-w-sm">
               Building tomorrow's infrastructure today. Transparency, quality, and national progress through strategic road development.

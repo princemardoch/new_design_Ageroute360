@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link, NavLink, useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
+import Logo from "/src/assets/images/logo.png"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -29,7 +30,7 @@ const Navbar = () => {
           
           {/* Logo Area */}
           <Link to="/" className="flex items-center gap-3 group">
-            <img src="/src/assets/images/logo.png" alt="Ageroute Logo" className="w-full h-full object-contain p-1" />
+            <img src={Logo} alt="Ageroute Logo" className="w-full h-full object-contain p-1" />
           </Link>
 
           {/* Desktop Navigation Links */}
