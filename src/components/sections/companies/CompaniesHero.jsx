@@ -1,6 +1,8 @@
 import { useRef } from 'react'
 import { gsap } from 'gsap'
 import { useGSAP } from '../../../hooks/useGSAP'
+import vectorImage from "../../../assets/images/Vector.png";
+
 
 const CompaniesHero = () => {
   const containerRef = useRef(null)
@@ -51,7 +53,7 @@ const CompaniesHero = () => {
       {/* Background Image Layer */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/src/assets/images/projectBannerBG.jpg" 
+          src="/src/assets/images/CompaniesHeroBackground.png" 
           alt="Companies Background" 
           className="w-full h-full object-cover object-center"
         />
@@ -76,7 +78,7 @@ const CompaniesHero = () => {
 
         {/* Right Side: Rotated Stat Card */}
         <div className="flex justify-start w-full lg:w-auto mt-8 lg:mt-0 pb-10 lg:pb-0">
-          <div className="companies-stat-card origin-top-left md:rotate-[12deg] p-6 lg:p-8 bg-white/10 rounded-[20px] shadow-[0_25px_50px_-12px_rgba(0,0,0,0.4)] border border-white/20 backdrop-blur-md flex items-center gap-5 group hover:bg-white/15 transition-colors shrink-0">
+          <div className="companies-stat-card origin-top-left md:rotate-[12deg] p-6 lg:py-10 lg:px-12 bg-white/10 rounded-[20px] shadow-[0_25px_50px_-12px_rgba(0,0,0,0.4)] border border-white/20 backdrop-blur-md flex items-center gap-5 group hover:bg-white/15 transition-colors shrink-0">
             
             {/* Clean SVG Building Icon */}
             <div className="w-14 h-14 bg-brand-amber/20 rounded-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
@@ -87,7 +89,7 @@ const CompaniesHero = () => {
 
             {/* Content */}
             <div className="flex flex-col gap-1">
-              <span className="text-white/80 text-xs md:text-sm font-inter uppercase tracking-widest whitespace-nowrap lg:w-32 leading-tight">
+              <span className="text-white/80 text-xs  font-inter uppercase tracking-widest whitespace-nowrap lg:w-32 leading-tight">
                 Certified Companies
               </span>
               <div className="text-white text-4xl md:text-5xl font-extrabold font-sora leading-none">
@@ -98,6 +100,12 @@ const CompaniesHero = () => {
         </div>
 
       </div>
+      {/* Bottom Vector Mask */}
+            <img
+              src={vectorImage}
+              alt="bottom vector"
+              className="absolute bottom-0 left-0 w-full object-cover z-20 pointer-events-none"
+            />
     </section>
   )
 }

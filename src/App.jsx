@@ -29,9 +29,9 @@ function App() {
                   <Route path="map" element={<MapPage />} />
                   <Route path="tenders" element={<TendersPage />} />
                   <Route path="companies" element={<CompaniesPage />} />
-                  {/* <Route path="reports" element={<ReportsPage />} /> */}
-                  {/* <Route path="about" element={<AboutPage />} /> */}
-                  {/* <Route path="*" element={<NotFoundPage />} /> */}
+                  <Route path="reports" element={<ReportsPage />} />
+                  <Route path="about" element={<AboutPage />} />
+                  <Route path="*" element={<NotFoundPage />} />
                 </Route>
               </Routes>
             </AnimatePresence>
