@@ -2,6 +2,7 @@ import { useRef } from 'react'
 import { gsap } from 'gsap'
 import { useGSAP } from '../../../hooks/useGSAP'
 import vectorImage from "../../../assets/images/Vector.png";
+import reportBgImage from "../../../assets/images/ReportpagebannerBG.png";
 
 const ReportsHero = () => {
   const containerRef = useRef(null)
@@ -38,7 +39,7 @@ const ReportsHero = () => {
       {/* Background Image Layer */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/src/assets/images/ReportpagebannerBG.png" 
+          src={reportBgImage} 
           alt="Reports Background" 
           className="w-full h-full object-cover object-center"
         />

@@ -2,6 +2,7 @@ import { useRef } from 'react'
 import { gsap } from 'gsap'
 import { useGSAP } from '../../../hooks/useGSAP'
 import vectorImage from "../../../assets/images/Vector.png";
+import companiesBgImage from "../../../assets/images/CompaniesHeroBackground.png";
 
 
 const CompaniesHero = () => {
@@ -53,7 +54,7 @@ const CompaniesHero = () => {
       {/* Background Image Layer */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/src/assets/images/CompaniesHeroBackground.png" 
+          src={companiesBgImage} 
           alt="Companies Background" 
           className="w-full h-full object-cover object-center"
         />

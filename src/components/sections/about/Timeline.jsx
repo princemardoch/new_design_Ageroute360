@@ -2,6 +2,7 @@ import { useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '../../../hooks/useGSAP'
+import timelineBgImage from '../../../assets/images/rightbgoftimeline.png'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -71,7 +72,9 @@ const Timeline = () => {
 
                   
 
-                  <div className={`w-full md:w-1/2 flex flex-col pl-14 md:pl-0 ${isEven ? 'md:pr-10 md:items-end md:text-right lg:-mr-10' : 'md:pl-10 md:items-start md:text-left lg:-ml-10'} md:bg-[url('/src/assets/images/rightbgoftimeline.png')] md:bg-contain md:bg-center md:bg-no-repeat`}>
+                  <div className={`w-full md:w-1/2 flex flex-col pl-14 md:pl-0 ${isEven ? 'md:pr-10 md:items-end md:text-right lg:-mr-10' : 'md:pl-10 md:items-start md:text-left lg:-ml-10'} md:bg-contain md:bg-center md:bg-no-repeat`}
+                    style={{ backgroundImage: `url(${timelineBgImage})` }}
+                  >
                     
                     <span className="text-brand-amber text-xl md:text-2xl font-semibold font-sans bg-white px-1 translate-y-[-10px]">
                       {item.year}

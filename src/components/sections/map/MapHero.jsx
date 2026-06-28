@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "../../../hooks/useGSAP";
 import vectorImage from "../../../assets/images/Vector.png";
+import mapBgImage from "../../../assets/images/projectBannerBG.jpg";
 
 const MapHero = () => {
   const containerRef = useRef(null);
@@ -58,7 +59,7 @@ const MapHero = () => {
     >
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/projectBannerBG.jpg"
+          src={mapBgImage}
           alt="Map Infrastructure Background"
           className="w-full h-full object-cover object-center"
         />

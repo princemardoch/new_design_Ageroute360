@@ -2,6 +2,7 @@ import { useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '../../../hooks/useGSAP'
+import whyPlatformBg from '../../../assets/images/WhythisplatformBackground.png'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -127,7 +128,7 @@ const CoreValues = () => {
   }, [])
 
   return (
-    <section ref={containerRef} className="py-24 md:py-32 bg-brand-navy overflow-hidden" style={{backgroundImage: "url('/src/assets/images/WhythisplatformBackground.png')", backgroundSize: 'cover', backgroundPosition: 'center'}}>
+    <section ref={containerRef} className="py-24 md:py-32 bg-brand-navy overflow-hidden" style={{backgroundImage: `url(${whyPlatformBg})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
       <div className="max-w-[1260px] mx-auto px-6 flex flex-col items-center">
         
         <div className="cv-header flex flex-col items-center text-center gap-4 mb-16 md:mb-20">
