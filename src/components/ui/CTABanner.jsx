@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '../../hooks/useGSAP'
-import buildingFutureBg from '../../assets/images/BuildingtheFutureBG.png'
+const buildingFutureBg = "https://pub-302d63e86b12413fb55492b5a13b4013.r2.dev/img_360/BuildingtheFutureBG.png";
 
 gsap.registerPlugin(ScrollTrigger)
 

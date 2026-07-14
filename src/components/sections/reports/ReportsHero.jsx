@@ -1,8 +1,8 @@
 import { useRef } from 'react'
 import { gsap } from 'gsap'
 import { useGSAP } from '../../../hooks/useGSAP'
-import vectorImage from "../../../assets/images/Vector.png";
-import reportBgImage from "../../../assets/images/ReportpagebannerBG.png";
+const vectorImage = "https://pub-302d63e86b12413fb55492b5a13b4013.r2.dev/img_360/Vector.png";
+const reportBgImage = "https://pub-302d63e86b12413fb55492b5a13b4013.r2.dev/img_360/ReportpagebannerBG.png";
 
 const ReportsHero = () => {
   const containerRef = useRef(null)

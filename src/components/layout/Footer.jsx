@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '../../hooks/useGSAP'
-import Logo from "/src/assets/images/logo.png"
+const Logo = "https://pub-302d63e86b12413fb55492b5a13b4013.r2.dev/img_360/logo.png";
 gsap.registerPlugin(ScrollTrigger)
 
 const Footer = () => {

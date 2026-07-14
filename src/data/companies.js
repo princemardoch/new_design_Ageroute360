@@ -7,7 +7,7 @@ export const companies = [
     projects: 45,
     location: 'Dakar',
     established: 2005,
-    logo: '/src/assets/images/company-1.jpg'
+    logo: 'https://pub-302d63e86b12413fb55492b5a13b4013.r2.dev/img_360/company-1.jpg'
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const companies = [
     projects: 28,
     location: 'Thiès',
     established: 2010,
-    logo: '/src/assets/images/company-2.jpg'
+    logo: 'https://pub-302d63e86b12413fb55492b5a13b4013.r2.dev/img_360/company-2.jpg'
   },
   {
     id: 3,
@@ -27,6 +27,6 @@ export const companies = [
     projects: 62,
     location: 'Saint-Louis',
     established: 2008,
-    logo: '/src/assets/images/company-3.jpg'
+    logo: 'https://pub-302d63e86b12413fb55492b5a13b4013.r2.dev/img_360/company-3.jpg'
   }
 ]

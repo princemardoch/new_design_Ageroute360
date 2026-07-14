@@ -1,8 +1,8 @@
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion, useInView } from "framer-motion";
-import bannerImage from "../../../assets/images/banner.png";
-import vectorImage from "../../../assets/images/Vector.png";
+const bannerImage = "https://pub-302d63e86b12413fb55492b5a13b4013.r2.dev/img_360/banner.png";
+const vectorImage = "https://pub-302d63e86b12413fb55492b5a13b4013.r2.dev/img_360/Vector.png";
 
 const HeroSection = () => {
   const navigate = useNavigate();

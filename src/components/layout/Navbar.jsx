@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link, NavLink, useNavigate } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import Logo from "/src/assets/images/logo.png"
+const Logo = "https://pub-302d63e86b12413fb55492b5a13b4013.r2.dev/img_360/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)

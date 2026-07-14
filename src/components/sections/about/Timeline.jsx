@@ -2,7 +2,7 @@ import { useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '../../../hooks/useGSAP'
-import timelineBgImage from '../../../assets/images/rightbgoftimeline.png'
+const timelineBgImage = "https://pub-302d63e86b12413fb55492b5a13b4013.r2.dev/img_360/rightbgoftimeline.png";
 
 gsap.registerPlugin(ScrollTrigger)
 

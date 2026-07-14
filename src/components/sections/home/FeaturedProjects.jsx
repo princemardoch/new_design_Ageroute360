@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '../../../hooks/useGSAP'
-import featuredProject01 from '../../../assets/images/Featured Projects01.png'
-import featuredProject02 from '../../../assets/images/Featured Projects02.png'
-import featuredProject03 from '../../../assets/images/Featured Projects03.png'
+const featuredProject01 = "https://pub-302d63e86b12413fb55492b5a13b4013.r2.dev/img_360/Featured%20Projects01.png";
+const featuredProject02 = "https://pub-302d63e86b12413fb55492b5a13b4013.r2.dev/img_360/Featured%20Projects02.png";
+const featuredProject03 = "https://pub-302d63e86b12413fb55492b5a13b4013.r2.dev/img_360/Featured%20Projects03.png";
 
 gsap.registerPlugin(ScrollTrigger)
 

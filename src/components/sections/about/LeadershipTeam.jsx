@@ -13,25 +13,25 @@ const LeadershipTeam = () => {
       id: 1,
       name: "Dr. Emmanuel Kalombo",
       role: "Director General",
-      image: "src/assets/images/partner01.jpg"
+      image: "https://pub-302d63e86b12413fb55492b5a13b4013.r2.dev/img_360/partner01.jpg"
     },
     {
       id: 2,
       name: "Ing. Marie Tshilanda",
       role: "Chief Engineer",
-      image: "src/assets/images/partner02.jpg"
+      image: "https://pub-302d63e86b12413fb55492b5a13b4013.r2.dev/img_360/partner02.jpg"
     },
     {
       id: 3,
       name: "Prof. Jean-Claude Mbala",
       role: "Head of Planning",
-      image: "src/assets/images/partner03.jpg"
+      image: "https://pub-302d63e86b12413fb55492b5a13b4013.r2.dev/img_360/partner03.jpg"
     },
     {
       id: 4,
       name: "Mme. Ange Kisumba",
       role: "Finance Director",
-      image: "src/assets/images/partner04.jpg"
+      image: "https://pub-302d63e86b12413fb55492b5a13b4013.r2.dev/img_360/partner04.jpg"
     }
   ]
 

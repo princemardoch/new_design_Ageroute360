@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "../../../hooks/useGSAP";
-import missionImage from "../../../assets/images/Our Mission01.png";
+const missionImage = "https://pub-302d63e86b12413fb55492b5a13b4013.r2.dev/img_360/Our%20Mission01.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
