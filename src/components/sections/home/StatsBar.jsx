@@ -11,10 +11,9 @@ const StatsBar = () => {
   const partners = [
     "WORLD BANK",
     "AFRICAN DEV. BANK",
-    "MINISTÈRE TRAVAUX",
+    "MINISTÈRE DES INFRASTRUCTURES",
     "EUROPEAN UNION",
-    "UNDP",
-    "USAID"
+    "UNDP"
   ]
 
   // Duplicate for seamless infinite marquee scrolling

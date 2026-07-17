@@ -56,7 +56,7 @@ const HeroSection = () => {
     },
   };
 
-  const partners = ["WORLD BANK", "AfDB", "IMF", "EU", "UNDP", "USAID"];
+  const partners = ["WORLD BANK", "AfDB", "IMF", "EU", "UNDP"];
   // Duplicated for the seamless marquee effect on mobile
   const marqueePartners = [...partners, ...partners];
 
